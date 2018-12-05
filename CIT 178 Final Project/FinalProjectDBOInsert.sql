@@ -1,0 +1,87 @@
+--USE [CrystalMountainEmployees]
+--GO
+--INSERT INTO EmployeeReview (EmployeeNumber,EmployeeAttendance,EmployeeAttitude,KnowledgeOfPostion,EmployeeAppearance,GuestRelationships)
+--VALUES ('1111',10,10,10,10,10),
+--		('2222',9,8,7,8,9),
+--		('3333',6,5,4,7,8),
+--		('4444',9,9,9,8,10),
+--		('5555',7,7,4,8,7),
+--		('6666',8,8,5,7,10),
+--		('7777',9,9,8,8,10),
+--		('8888',6,7,9,9,6),
+--		('9999',10,10,10,10,9);
+--GO
+--INSERT INTO EmployeeSalaryInfo(PayRate,PayFrequency,Deductions,Taxes,YTDIncome) 
+--VALUES(14.00,'Hourly',100,5000,'$25,000'),
+--		(3.52,'Hourly',0,4000,'$18,000'),
+--		(12.00,'Hourly',50,4500,'$22,000'),
+--		(2000,'Salary',200,10000,'$52,000'),
+--		(15.00,'Hourly',0,5200,'$26,000'),
+--		(3.52,'Hourly',0,5500,'$27,000'),
+--		(2500,'Salary',300,15000,'$78,000'),
+--		(1500,'Salary',0,7800,'$39,000'),
+--		(1750,'Salary',0,9100,'$45,500');
+--GO
+--INSERT INTO Departments(DeptNumber,DeptName) 
+--VALUES('10','Housekeeping'),
+--		('20','Front Desk'),
+--		('30','Security'),
+--		('40','Food & Beverage'),
+--		('50','Marketing'),
+--		('60','Accounting'),
+--		('70','Human Resources'),
+--		('80','Activities'),
+--		('90','Information Technology');
+--GO
+--INSERT INTO EmployeePosition([Title/Position],DepartmentNumber)
+--VALUES('HouseKeeper','10'),
+--		('Manager','10'),
+--		('Front Desk','20'),
+--		('Manager','20'),
+--		('Security','30'),
+--		('Manager','30'),
+--		('Server','40'),
+--		('Cook','40'),
+--		('Busser','40'),
+--		('Host','40'),
+--		('Dishwasher','40'),
+--		('Banquet','40'),
+--		('Marketing','50'),
+--		('Manager','50'),
+--		('Accountant','60'),
+--		('Manager','60'),
+--		('Human Resources','70'),
+--		('Manager','70'),
+--		('Golf Pro','80'),
+--		('Golf Instructor','80'),
+--		('Greens Crew','80'),
+--		('Chairlift Operator','80'),
+--		('Ski Instructor','80'),
+--		('Ski Patrol','80');
+	
+--INSERT INTO DeptEmployees(EmployeeNumber,DeptNumber,Position)
+--VALUES('1111','10','HouseKeeping'),
+--		('2222','40','Server'),
+--		('3333','20','Front Desk'),
+--		('4444','70','Manager'),
+--		('5555','20','Security'),
+--		('6666','40','Server'),
+--		('7777','60','Manager'),
+--		('8888','40','Manager'),
+--		('9999','10','Manager');
+--	GO
+
+--INSERT INTO EmployeePosition([Title/Position],DepartmentNumber)
+--VALUES('Manager','40');
+
+--INSERT INTO Employees(EmployeeNumber,FirstName,LastName,[Address],HireDate,BirthDate,PositionID,PayrollNumber,ReviewNumber)
+--VALUES('1111','Bonita','Holand','4545 E. Hillside Rd. Traverse City, MI',2016-11-23,1982-12-04,1,1,8),
+--		('2222','Gerald','Hillard','1593 Andrew Pl. Traverse City, MI',2016-10-08,1990-05-04,7,2,3),
+--		('3333','Don','Spawlding','1921 Rainbow Ave. Kaleva, MI',2018-01-19,1995-04-11,3,3,2),
+--		('4444','Leah','Elliot','619 Bay Hill Dr. Traverse City, MI',2010-06-15,1973-11-27,18,4,5),
+--		('5555','Billy','Baggins','777 Lucky Ln. Thompsonville, MI',2015-10-31,1983-10-15,5,5,4),
+--		('6666','Shalinda','Smith','4369 Rock Away Ln. Interlochen, MI',2017-11-20,1995-09-06,7,6,6),
+--		('7777','Jacob','Blane','0001 Magic Way Traverse City, MI',2015-09-01,1985-09-11,16,7,1),
+--		('8888','Robert','Evans','1770 N. Mount Tom Rd. Manistee, MI',2018-09-27,1989-02-15,25,8,7),
+--		('9999','Kelly','Mucci','4636 Kettle Corn Rd. Traverse City, MI',2016-04-01,1984-06-15,2,9,9);
+SELECT * FROM Employees;
